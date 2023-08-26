@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #D2B48C;
+    align-items: center;
+}
+
+.cabecalho-titulo {
+    font-size: 96px;
+    font-family: 'Delius Swash Caps', cursive;
+    font-weight: 600;
+}
