@@ -10,3 +10,27 @@ header {
     font-family: 'Delius Swash Caps', cursive;
     font-weight: 600;
 }
+
+.sobre {
+    background-image: url(/img/background-bolo.png);
+    background-size: cover;
+    height: 400px;
+    font-size: 40px;
+    text-align: center;
+    color: #D2B48C;
+    background-repeat: no-repeat;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    
+}
+
+.sobre p {
+    width: 60%;
+    line-height: 50px;
+    text-shadow:
+    -1px -1px 0 #000, /* Sombra superior esquerda */
+     1px -1px 0 #000, /* Sombra superior direita */
+    -1px 1px 0 #000, /* Sombra inferior esquerda */
+     1px 1px 0 #000; /* Sombra inferior direita */
+}
