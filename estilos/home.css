@@ -3,12 +3,14 @@ header {
     justify-content: space-around;
     background-color: #D2B48C;
     align-items: center;
+    border-bottom: 5px solid #ffffff;
 }
 
 .cabecalho-titulo {
     font-size: 96px;
     font-family: 'Delius Swash Caps', cursive;
     font-weight: 600;
+    border-bottom: 1px solid rgba(71, 50, 4, 0.281);
 }
 
 .sobre {
@@ -22,6 +24,7 @@ header {
     display: flex; 
     align-items: center; 
     justify-content: center;
+    border-bottom: 5px solid #ffffff;
     
 }
 
@@ -33,4 +36,32 @@ header {
      1px -1px 0 #000, /* Sombra superior direita */
     -1px 1px 0 #000, /* Sombra inferior esquerda */
      1px 1px 0 #000; /* Sombra inferior direita */
+}
+
+.filtro {
+    background-color: #754f1c;
+
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    height: 100px;
+    align-items: center;
+    border-bottom: 5px solid #ffffff;
+}
+
+.botao-massabranca, .botao-massachocolate, .botao-outros {
+    height: 60px;
+    width: 200px;
+    background-color: #fde1bc;
+    font-size: 20px;
+    border-radius: 100px;
+    font-family: 'Delius Swash Caps', cursive;
+    font-weight: 600;
+}
+
+.botao-massabranca:hover, .botao-massachocolate:hover, .botao-outros:hover {
+    background-color: #a39684;
 }
