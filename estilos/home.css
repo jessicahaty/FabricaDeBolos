@@ -39,7 +39,7 @@ header {
 }
 
 .filtro {
-    background-color: #754f1c;
+    background-color: #754e1cb7;
 
 }
 
@@ -49,7 +49,6 @@ header {
     gap: 200px;
     height: 100px;
     align-items: center;
-    border-bottom: 5px solid #ffffff;
 }
 
 .botao-massabranca, .botao-massachocolate, .botao-outros {
@@ -64,6 +63,7 @@ header {
 
 .botao-massabranca:hover, .botao-massachocolate:hover, .botao-outros:hover {
     background-color: #a39684;
+    cursor: pointer;
 }
 
 .filtro p {
@@ -76,13 +76,14 @@ header {
 }
 
 .catalogo {
-    margin-top: 50px;
+    padding-top: 50px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     gap: 100px;
+    background-color: #754e1cb7;
 }
 
 .boloCard {
@@ -105,4 +106,21 @@ header {
 
 .boloCard:hover img {
     transform: scale(1.2);
+}
+
+
+.botoesDosBolos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botao {
+    height: 40px;
+    width: 25%;
+    border-color: transparent;
+}
+
+.botao:hover {
+    background-color: #a39684;
+    cursor: pointer;
 }
