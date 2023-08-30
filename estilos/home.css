@@ -65,3 +65,12 @@ header {
 .botao-massabranca:hover, .botao-massachocolate:hover, .botao-outros:hover {
     background-color: #a39684;
 }
+
+.filtro p {
+    font-family: 'Delius Swash Caps', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    height: 40px;
+    padding-top: 20px;
+}
