@@ -29,7 +29,7 @@ const bolosDisponiveis = [
 function exibirBolos() {
     const catalogo = document.getElementById("catalogo")
 
-    bolosDisponiveis.forEach(bolo => {
+    bolosDisponiveis.forEach((bolo, index) => {
 
         const boloCard = document.createElement("div")
         boloCard.classList.add("boloCard")
@@ -57,6 +57,10 @@ function exibirBolos() {
         botaoEditar.classList.add("botao", "botaoEditar")
         botaoEditar.textContent = "Editar"
 
+        botaoEditar.addEventListener("click", () => {
+            window.location.href = `editarBolo.html?index=${index}`
+        })
+
         const botaoDeletar = document.createElement("button")
         botaoDeletar.classList.add("botao", "botaoDeletar")
         botaoDeletar.textContent = "Deletar"
@@ -77,8 +81,8 @@ function exibirBolos() {
 
 }
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
     exibirBolos();
-};
+});
 
 console.log(bolosDisponiveis)
