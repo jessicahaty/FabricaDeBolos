@@ -14,7 +14,7 @@ header {
 }
 
 .sobre {
-    background-image: url(./img/backgroung-bolos.jpg);
+    background-image: url(../img/backgroung-bolos.jpg);
     background-size: 100%;
     height:500px;
     width: 100%;
