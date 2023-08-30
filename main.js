@@ -9,20 +9,20 @@ class Bolo {
 }
 
 const bolosDisponiveis = [
-    new Bolo ("Bolo de Chocolate", "/img-bolo/Chocolate.png", "5 kg", "3 dias", 40),
-    new Bolo ("Bolo de Morango", "/img-bolo/Morango.png", "4 kg", "3 dias", 60),
-    new Bolo ("Bolo de Limão", "/img-bolo/Limao.png", "5 kg", "2 dias", 50),
-    new Bolo ("Bolo de Cenoura", "/img-bolo/Cenoura.png", "3 kg", "2 dias", 50),
-    new Bolo ("Bolo de Coco", "/img-bolo/Coco.png", "3 kg", "2 dias", 50),
-    new Bolo ("Bolo Red Velvet", "/img-bolo/Red_velvet.png", "3 kg", "2 dias", 50),
-    new Bolo ("Bolo de Nozes", "/img-bolo/Nozes.png", "3 kg", "2 dias", 50),
-    new Bolo ("Bolo de Abacaxi", "/img-bolo/Abacaxi.png", "3 kg", "2 dias", 50),
-    new Bolo ("Bolo de Maracujá", "/img-bolo/Maracuja.png", "3 kg", "2 dias", 50),
-    new Bolo ("Bolo de Café", "/img-bolo/Cafe.png", "3 kg", "2 dias", 50),
-    new Bolo ("Bolo de Amendoim", "/img-bolo/Amendoim.png", "3 kg", "2 dias", 50),
-    new Bolo ("Bolo de Prestígio", "/img-bolo/Prestigio.png", "3 kg", "2 dias", 50),
-    new Bolo ("Bolo de Brigadeiro", "/img-bolo/Brigadeiro.png", "3 kg", "2 dias", 50),
-    new Bolo ("Bolo de Leite Ninho", "/img-bolo/Leite.png", "3 kg", "2 dias", 50),
+    new Bolo ("Bolo de Chocolate", "./img-bolo/Chocolate.png", "5 kg", "3 dias", 40),
+    new Bolo ("Bolo de Morango", "./img-bolo/Morango.png", "4 kg", "3 dias", 60),
+    new Bolo ("Bolo de Limão", "./img-bolo/Limao.png", "5 kg", "2 dias", 50),
+    new Bolo ("Bolo de Cenoura", "./img-bolo/Cenoura.png", "3 kg", "2 dias", 50),
+    new Bolo ("Bolo de Coco", "./img-bolo/Coco.png", "3 kg", "2 dias", 50),
+    new Bolo ("Bolo Red Velvet", "./img-bolo/Red_velvet.png", "3 kg", "2 dias", 50),
+    new Bolo ("Bolo de Nozes", "./img-bolo/Nozes.png", "3 kg", "2 dias", 50),
+    new Bolo ("Bolo de Abacaxi", "./img-bolo/Abacaxi.png", "3 kg", "2 dias", 50),
+    new Bolo ("Bolo de Maracujá", "./img-bolo/Maracuja.png", "3 kg", "2 dias", 50),
+    new Bolo ("Bolo de Café", "./img-bolo/Cafe.png", "3 kg", "2 dias", 50),
+    new Bolo ("Bolo de Amendoim", "./img-bolo/Amendoim.png", "3 kg", "2 dias", 50),
+    new Bolo ("Bolo de Prestígio", "./img-bolo/Prestigio.png", "3 kg", "2 dias", 50),
+    new Bolo ("Bolo de Brigadeiro", "./img-bolo/Brigadeiro.png", "3 kg", "2 dias", 50),
+    new Bolo ("Bolo de Leite Ninho", "./img-bolo/Leite.png", "3 kg", "2 dias", 50),
 ]
 
 
