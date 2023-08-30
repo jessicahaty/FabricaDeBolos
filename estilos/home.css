@@ -43,7 +43,7 @@ header {
 
 }
 
-.botoes {
+.botoes-filtro {
     display: flex;
     justify-content: center;
     gap: 200px;
@@ -73,4 +73,36 @@ header {
     color: #ffffff;
     height: 40px;
     padding-top: 20px;
+}
+
+.catalogo {
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+
+.boloCard {
+    border: 3px solid transparent;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #f3e5d0;
+    font-size: 20px;
+}
+
+.boloCard img {
+    height: 300px;
+    transition: transform 0.4s;
+}
+
+
+.boloCard:hover img {
+    transform: scale(1.2);
 }
