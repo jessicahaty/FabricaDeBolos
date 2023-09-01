@@ -1,37 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
     <title>Fabrica de Bolos</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Delius+Swash+Caps&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./estilos/home.css">
 </head>
-<header>
-    <img src="./img/logo-fabrica-de-bolos.png">
-    <h1 class="cabecalho-titulo">Fabrica de Bolos Deliciosos</h1>
-</header>
+
 <body>
+    <header>
+        <img src="./img/logo-fabrica-de-bolos.png">
+        <h1 class="cabecalho-titulo">Fabrica de Bolos</h1>
+    </header>
     <section class="sobre">
         <p>Há muitos anos, Dona Maria, uma confeiteira apaixonada, começou sua pequena padaria na periferia de São Paulo, onde criou deliciosos bolos caseiros. Seus bolos logo se tornaram famosos na região devido ao sabor excepcional e à variedade de sabores. Com o tempo, sua pequena padaria cresceu e se transformou na "Fábrica de Bolos Deliciosos".</p>
     </section>
-    <section class="filtro">
-        <p>Selecione a categoria</p>
-        <ul class="botoes-filtro">
-            <li><button class="botao-massabranca">Massa Branca</button></li>
-            <li><button class="botao-massachocolate">Massa de Chocolate</button></li>
-            <li><button class="botao-outros">Outros</button></li>
-        </ul>
-    </section>
     <main>
-        <section id="catalogo" class="catalogo">
+        <table id="tableClient" class="records">
+            <tbody>
 
-        </section>
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Bolo</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="url" data-index="new" class="modal-field" placeholder="url da imagem"
+                        required>
+                    <input type="text" id="nome" class="modal-field" placeholder="Nome do bolo" required>
+                    <input type="text" id="peso" class="modal-field" placeholder="Peso do bolo" required>
+                    <input type="text" id="validade" class="modal-field" placeholder="validade do bolo" required>
+                    <input type="text" id="preco" class="modal-field" placeholder="preco" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+        <button type="button" class="button blue mobile" id="cadastrarCliente">Adicionar um novo bolo</button>
     </main>
-    <script src="main.js"></script>
-    <script src="editarBolo.js"></script>
+    <footer>
+    
+    </footer>
 </body>
+
 </html>
