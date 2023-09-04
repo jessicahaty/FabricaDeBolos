@@ -76,3 +76,16 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+@media (max-width:480px){
+
+    .modal-content {
+        width: 350px;
+    }
+
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+    }
+}

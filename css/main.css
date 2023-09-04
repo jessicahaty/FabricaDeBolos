@@ -101,4 +101,43 @@ tbody{
 
 }
 
+@media (max-width:480px){
+    main {
+        align-items: center;
+    }
 
+    header{
+        position:fixed;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    header img {
+        width: 15%;
+    }
+
+    .cabecalho-titulo{
+        font-size:40px;
+    }
+
+    tr {
+        align-items: center;
+        width: 300px;
+    }
+
+    tr img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .sobre p {
+        font-size: 20px;
+        line-height: 25px;
+        width: 350px;
+
+    }
+
+
+}
