@@ -9,7 +9,6 @@ const fecharModal = () => {
 const getLocalStorage = () => JSON.parse(localStorage.getItem('db_bolo')) ?? []
 const setLocalStorage = (dbBolo) => localStorage.setItem("db_bolo", JSON.stringify(dbBolo))
 
-// CRUD - criar ler atualizar excluir
 const excluirBolo = (indice) => {
     const dbBolo = lerBolos()
     dbBolo.splice(indice, 1)
@@ -34,7 +33,6 @@ const camposSaoValidos = () => {
     return document.getElementById('form').reportValidity()
 }
 
-// Interação com o layout
 
 const limparCampos = () => {
     const campos = document.querySelectorAll('.modal-field')
@@ -69,11 +67,11 @@ const criarLinha = (bolo, indice) => {
     const novaLinha = document.createElement('tr')
     novaLinha.innerHTML = `
         <img src="${bolo.url}">
-        <td>${bolo.nome}</td>
-        <td>${bolo.peso} g</td>
-        <td>${bolo.validade} dias</td>
-        <td>R$ ${bolo.preco}</td>
-        <td>
+        <td class="bloco-nome"><strong>${bolo.nome}<strong></td>
+        <td class="bloco-peso">${bolo.peso} g</td>
+        <td class="bloco-validade">${bolo.validade} dias</td>
+        <td class="bloco-preco">R$ ${bolo.preco}</td>
+        <td class="botoes-bolo">
             <button type="button" class="botao verde" id="editar-${indice}">Editar</button>
             <button type="button" class="botao vermelho" id="excluir-${indice}" >Excluir</button>
         </td>
@@ -95,7 +93,7 @@ const atualizarTabela = () => {
 const preencherCampos = (bolo) => {
     const urlInput = document.getElementById('url');
     if (urlInput.dataset.indice === 'novo') {
-        urlInput.value = ""; // Limpa o campo URL ao adicionar um novo bolo
+        urlInput.value = "";
     }
     urlInput.value = bolo.url;    
     document.getElementById('url').value = bolo.url
@@ -136,7 +134,7 @@ const editarExcluir = (evento) => {
 const bolosIniciaisAdicionados = localStorage.getItem('bolosIniciaisAdicionados')
 
 if (!bolosIniciaisAdicionados) {
-    // Popula bolos iniciais
+    
     const bolosIniciais = [
         { url: 'https://cdn.sodiedoces.com.br/wp-content/uploads/2023/02/14115749/25972_chocolate_zero_540x400px.png', nome: 'Bolo de Chocolate', peso: '300', validade: '3', preco: '30' },
         { url: 'https://cdn.sodiedoces.com.br/wp-content/uploads/2021/10/25112604/20412_fotos_104-frutas-vermelhas_bolo_fatia_540x400px100.png', nome: 'Bolo de Morango', peso: '500', validade: '2', preco: '50' },
@@ -156,13 +154,12 @@ if (!bolosIniciaisAdicionados) {
 
     bolosIniciais.forEach(bolo => criarBolo(bolo));
 
-    // Define uma bandeira para indicar que os bolos iniciais foram adicionados
+    
     localStorage.setItem('bolosIniciaisAdicionados', true);
 }
 
 atualizarTabela()
 
-// Eventos
 document.getElementById('cadastrarBolo')
     .addEventListener('click', abrirModal)
 
@@ -176,4 +173,4 @@ document.querySelector('#tabela-bolo>tbody')
     .addEventListener('click', editarExcluir)
 
 document.getElementById('cancelar')
-    .addEventListener('click', fecharModal)
+    .addEventListener('click', fecharModal) 

@@ -1,27 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #caaa81;
+    --secundary-color: #FFF1CC;
+    --shadow-color: #CCC;
+    --text-color: #FFF;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Delius', cursive;
+    position:relative;
+    background-color: rgb(53, 33, 15);
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(210, 180, 140);
+    text-align: center;
+    align-items: center;
+}
+
+.cabecalho-titulo {
+    font-size: 180px;
+    font-family: 'Delius Swash Caps', cursive;
+    border-bottom: 1px solid rgba(71, 50, 4, 0.281);
+    color: rgb(33, 39, 44);
+}
+
+
+.sobre {
+    background-size: 100%;
+    height:500px;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    color: #ffebd1;
+    background-repeat: no-repeat;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background: linear-gradient(180deg, rgb(210, 180, 140) 0%, rgb(53, 33, 15) 100%);
+    
+}
+
 .sobre p {
     width: 60%;
     line-height: 50px;
+    text-shadow:
+    -1px -1px 0 #000, 
+     1px -1px 0 #000, 
+    -1px 1px 0 #000, 
+     1px 1px 0 #000; 
 }
 
-main {
+main{
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 90%;
-    gap: 20%;
+    margin: 5vh auto;
+    padding: 50px;
+    gap: 20px;
 }
 
-footer {
-    width: 100;
-    text-align: center;
-    padding: 20px;
-}
 
 tr {
     display: flex;
     flex-direction: column;
+    border: 1px solid rgb(168, 112, 27);
+    background-color: wheat ;
+    border-radius: 15px;
+    gap: 10px;
+
 }
 
 tr img {
-    width: 10%;
+    width: 500px;
+    height: 400px;
 }
+
+tbody{
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.bloco-nome, .bloco-peso, .bloco-validade, .bloco-preco {
+    font-size: 22px;
+
+}
+
+
